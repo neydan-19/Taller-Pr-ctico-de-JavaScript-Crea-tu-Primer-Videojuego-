@@ -206,7 +206,7 @@ function moveByKeys(event) {
 function moveUp() {
   console.log('Me quiero mover hacia arriba');
 
-  if ((playerPosition.y - elementsSize) < elementsSize) {
+  if ((playerPosition.y ) < elementsSize ) {
     console.log('OUT');
   } else {
     playerPosition.y -= elementsSize;
@@ -226,7 +226,7 @@ function moveLeft() {
 function moveRight() {
   console.log('Me quiero mover hacia derecha');
 
-  if ((playerPosition.x + elementsSize) > canvasSize) {
+  if ((playerPosition.x + elementsSize) > canvasSize + elementsSize) {
     console.log('OUT');
   } else {
     playerPosition.x += elementsSize;
@@ -236,7 +236,7 @@ function moveRight() {
 function moveDown() {
   console.log('Me quiero mover hacia abajo');
   
-  if ((playerPosition.y + elementsSize) > canvasSize) {
+  if ((playerPosition.y + elementsSize) > canvasSize + elementsSize) {
     console.log('OUT');
   } else {
     playerPosition.y += elementsSize;
